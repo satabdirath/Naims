@@ -228,6 +228,11 @@
       padding: 0;
     }
   
+    .navmenu {
+      display: flex;
+      align-items: center;
+      
+    }
     .navmenu ul {
       margin: 0;
       padding: 0;
@@ -235,6 +240,7 @@
       list-style: none;
       align-items: center;
     }
+
   
     .navmenu li {
       position: relative;
@@ -251,7 +257,7 @@
   
     .navmenu a,
     .navmenu a:focus {
-      color: var(--nav-color);
+      color: #000;
       font-size: 14px;
       padding: 0 2px;
       font-family: var(--nav-font);
@@ -295,7 +301,7 @@
     .navmenu li:hover>a,
     .navmenu .active,
     .navmenu .active:focus {
-      color: var(--nav-hover-color);
+      color: #000;
     }
   
     .navmenu .dropdown ul {
@@ -2852,3 +2858,6 @@
     outline: 0;
   }
 
+.alert-warning {
+  z-index: 9999;
+}
