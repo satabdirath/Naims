@@ -43,11 +43,11 @@
    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NX3FV3BZ" height="0" width="0"
          style="display:none;visibility:hidden"></iframe></noscript>
 
-   <div class="alert alert-warning alert-dismissible fade show" role="alert">
-      <strong>You should check in on some of those fields below., you agree to the <a href="#"
-            class="open-privacy-btn">Privacy Policy</a> and <a href="#" class="open-term-condition-btn">Terms of
-            Use</a>.</strong>
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+   <div class="alert alert-dismissible p-0" role="alert" style="z-index: 99999; background-color: #e9e6e6;">
+      You should check in on some of those fields below., you agree to the <a href="#" class="open-privacy-btn">Privacy
+         Policy</a> and <a href="#" class="open-term-condition-btn">Terms of
+         Use</a>.
+      <button type="button" class="btn-close p-0" data-bs-dismiss="alert" aria-label="Close"></button>
    </div>
    <header id="header" class="header d-flex align-items-center fixed-top">
       <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -64,11 +64,25 @@
                <li><a href="#contact">Contact</a></li>
                <!-- <li><a href="#contact"><i class="fa-solid fa-user"></i></a></li> -->
             </ul>--
-            <div>
-               <a href="#contact"><i class="fa-solid fa-user fs-4"></i></a>
+            <div class="login-container">
+               <div class="login">
+                  <a href="#contact"><i class="fa-regular fa-user"></i> Login <i
+                        class="fa-solid fa-chevron-down"></i></a>
+                  <!-- <li><a href="#"><i class="mobile-nav-toggle bi bi-list"></i></a></li> -->
+               </div>
+               <div class="login-submenu">
+                  <div class="sign-up">
+                     <a href="#">New Customer?</a>
+                     <a href="#" class="sign-up-h">Sign Up</a>
+                  </div>
+                  <!-- <div class="my-profile"><i class="fa-solid fa-user"></i>My Profile</div> -->
+               </div>
+            </div>
+            <div class="free-estimate">
+               <a href="#contact"> Get Free Estimate </a>
                <!-- <li><a href="#"><i class="mobile-nav-toggle bi bi-list"></i></a></li> -->
             </div>
-            
+
          </nav>
          <!-- <a href="tel:18001208230" class="call d-flex align-items-center">
             <i class="bi bi-telephone mobile-icon"></i>
@@ -211,7 +225,8 @@
                </div>
                <p>By submitting this form, you agree to the <a href="#" class="open-privacy-btn">Privacy Policy</a> and
                   <a href="#" class="open-term-condition-btn">Terms of
-                     Use</a>.</p>
+                     Use</a>.
+               </p>
             </form>
          </div>
       </div>
