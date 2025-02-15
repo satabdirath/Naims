@@ -230,13 +230,14 @@ h6 {
   --------------------------------------------------------------*/
 /* Desktop Navigation */
 @media (min-width: 1200px) {
-  .navmenu {
-    padding: 0;
-  }
+  
+ 
 
   .navmenu {
     display: flex;
     align-items: center;
+    padding: 0;
+    width: 50%;
 
   }
 
@@ -369,7 +370,12 @@ h6 {
   }
 }
 
-
+.nav-icons {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 @media (max-width: 1199px) {
@@ -424,7 +430,7 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    /* background-color: color-mix(in srgb, var(--accent-color), transparent 90%); */
   }
 
   .navmenu a i:hover,
@@ -498,18 +504,20 @@ h6 {
 
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
-  background: url("../img/footer-bg-3.jpg") top center no-repeat;
+  /* background-color: var(--background-color); */
+  background: url("../img/pattern-bg.webp") top center no-repeat;
   background-size: cover;
   font-size: 14px;
+  /* z-index: 999999; */
   position: relative;
+  /* border: 2px solid red; */
   padding: 40px 20px;
 }
 
 
 .footer:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 20%);
+  background: color-mix(in srgb, #d9534f, transparent 80%);
   position: absolute;
   inset: 0;
 }
@@ -619,6 +627,15 @@ h6 {
 
   .footer-newsletter input[type="email"] {
     width: 70%;
+  }
+  .header {
+    justify-content: space-between !important;
+  }
+  .nav-icons {
+    width: 100%;
+  }
+  .logo-container {
+    margin-left: 5%;
   }
 }
 
@@ -2895,9 +2912,21 @@ time {
   padding-right: 5px;
 }
 
+.logo-container {
+  width: 25%;
+}
+.login a {
+  color: #000;
+}
+.free-estimate a {
+  color: #000;
+  white-space: nowrap;
+}
+
 .login {
   border-radius: 8px;
   padding: 5px  15px;
+  white-space: nowrap;
 }
 
 .login-container:hover {
@@ -2916,6 +2945,9 @@ time {
 
 .login-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-submenu {
@@ -2926,9 +2958,9 @@ time {
   right: 0;
   top: 30px;
   /* padding: 10px; */
-  border-radius: 16px;
+  border-radius: 10px;
   display: none;
-  transition: all ease-in-out .5s;
+  /* transition: all ease-in-out .5s; */
 }
 
 .login-container:hover .login-submenu {
@@ -2942,9 +2974,10 @@ time {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #000;
+  border: 1px solid #000;
   padding: 5px 10px;
   border-radius: 16px;
+  box-shadow: #000;
 }
 .login-submenu .sign-up .sign-up-h {
   color: #b4292d;
