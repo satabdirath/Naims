@@ -3041,7 +3041,7 @@ time {
 .navigation ul li a .icon-1 {
   position: relative;
   display: block;
-  line-height: 75px;
+  line-height: 68px;
   font-size: 1.5em;
   text-align: center;
   transition: 0.5s;
@@ -3054,7 +3054,7 @@ time {
 
 .navigation ul li a .text-1 {
   position: absolute;
-  color: black;
+  color: white;
   font-weight: 400;
   font-size: 0.75em;
   letter-spacing: 0.05em;
@@ -3079,7 +3079,7 @@ time {
   transition: 0.5s;
 }
 
-.indicator::before {
+/* .indicator::before {
   content: "";
   position: absolute;
   top: 55%;
@@ -3101,7 +3101,7 @@ time {
   background-color: transparent;
   border-top-left-radius: 20px;
   box-shadow: -1px -10px 0 0 #fff;
-}
+} */
 
 .navigation ul li:nth-child(1).active~.indicator {
   transform: translateX(calc(65px * 0));
