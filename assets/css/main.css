@@ -3013,9 +3013,12 @@ time {
 
 .navigation ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
   /* width: 350px; */
   /* justify-content: space-evenly;
   align-items: center; */
+  padding-right: 2rem;
 }
 
 .navigation ul li {
@@ -3023,6 +3026,7 @@ time {
   list-style: none;
   width: 65px;
   height: 65px;
+  padding-inline: 37px;
   z-index: 1;
 }
 
@@ -3049,7 +3053,7 @@ time {
 }
 
 .navigation ul li.active a .icon-1 {
-  transform: translateY(-32px);
+  transform: translateY(-23px);
 }
 
 .navigation ul li a .text-1 {
@@ -3059,18 +3063,20 @@ time {
   font-size: 0.75em;
   letter-spacing: 0.05em;
   transition: 0.5s;
-  opacity: 0;
+  /* opacity: 0; */
   transform: translateY(20px);
 }
 
-.navigation ul li.active a .text-1 {
+/* .navigation ul li.active a .text-1 {
   opacity: 1;
   transform: translateY(10px);
-}
+} */
 
 .indicator {
   position: absolute;
-  top: -50%;
+  top: -45%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 65px;
   height: 65px;
   background-color: #b4292d;
@@ -3079,31 +3085,33 @@ time {
   transition: 0.5s;
 }
 
-/* .indicator::before {
-  content: "";
-  position: absolute;
-  top: 55%;
-  left: -22px;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  border-top-right-radius: 20px;
-  box-shadow: 1px -10px 0 0 #fff;
+ .indicator::before {
+ 
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: -163px;
+    width: 162px;
+    height: 20px;
+    background-color: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 #fff;
+
 }
 
 .indicator::after {
   content: "";
   position: absolute;
   top: 55%;
-  right: -22px;
-  width: 20px;
+  right: -163px;
+  width: 162px;
   height: 20px;
   background-color: transparent;
   border-top-left-radius: 20px;
   box-shadow: -1px -10px 0 0 #fff;
-} */
+} 
 
-.navigation ul li:nth-child(1).active~.indicator {
+/* .navigation ul li:nth-child(1).active~.indicator {
   transform: translateX(calc(65px * 0));
 }
 
@@ -3121,4 +3129,4 @@ time {
 
 .navigation ul li:nth-child(5).active~.indicator {
   transform: translateX(calc(65px * 4));
-}
+} */
