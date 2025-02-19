@@ -3090,8 +3090,8 @@ time {
     content: "";
     position: absolute;
     top: 55%;
-    left: -163px;
-    width: 162px;
+    left: -190px;
+    width: 190px;
     height: 20px;
     background-color: transparent;
     border-top-right-radius: 20px;
@@ -3103,8 +3103,8 @@ time {
   content: "";
   position: absolute;
   top: 55%;
-  right: -163px;
-  width: 162px;
+  right: -190px;
+  width: 190px;
   height: 20px;
   background-color: transparent;
   border-top-left-radius: 20px;
