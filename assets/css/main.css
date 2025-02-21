@@ -375,6 +375,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 93px;
 }
 
 
@@ -2929,17 +2930,19 @@ time {
   white-space: nowrap;
 }
 
-.login-container:hover {
+/* .login-container {
   background-color: #b4292d;
-  border-radius: 8px;
-}
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+} */
 
 .login-container:hover .fa-chevron-down {
   transform: rotate(180deg);
 
 }
 
-.login-container:hover a {
+.login-container a {
   color: #fff;
 }
 
@@ -2953,12 +2956,15 @@ time {
 .login-submenu {
   position: absolute;
   color: #000;
-  background-color: #fff;
+  background-color: #eeedede8;
   width: 300px;
   right: 0;
-  top: 30px;
-  /* padding: 10px; */
-  border-radius: 10px;
+  top: 40px;
+
+  padding: 10px;
+ 
+  /* border-radius: 16px; */
+  /* border: 1px solid #000; */
   display: none;
   /* transition: all ease-in-out .5s; */
 }
@@ -2974,11 +2980,12 @@ time {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #000;
+  /* border-bottom: 1px solid #000; */
   padding: 5px 10px;
-  border-radius: 16px;
+ 
   box-shadow: #000;
 }
+
 .login-submenu .sign-up .sign-up-h {
   color: #b4292d;
 }
@@ -2988,9 +2995,10 @@ time {
   border-radius: 8px;
   padding: 5px  15px;
 }
-.free-estimate:hover>a {
+.free-estimate a {
   background-color: #b4292d;
   color: #fff;
+  /* margin-right: 5px; */
 }
 
 
@@ -3008,6 +3016,10 @@ time {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-image: url(/Naims/assets/img/mob-footer.png); */
+  background-position: center;
+  background-size: cover;
+
   /* border-radius: 10px; */
 }
 
@@ -3090,8 +3102,8 @@ time {
     content: "";
     position: absolute;
     top: 55%;
-    left: -163px;
-    width: 162px;
+    left: -190px;
+    width: 190px;
     height: 20px;
     background-color: transparent;
     border-top-right-radius: 20px;
@@ -3103,8 +3115,8 @@ time {
   content: "";
   position: absolute;
   top: 55%;
-  right: -163px;
-  width: 162px;
+  right: -190px;
+  width: 190px;
   height: 20px;
   background-color: transparent;
   border-top-left-radius: 20px;
@@ -3130,3 +3142,12 @@ time {
 .navigation ul li:nth-child(5).active~.indicator {
   transform: translateX(calc(65px * 4));
 } */
+
+
+
+/* ---------------------------- */
+.user-icon {
+  font-size: 30px;
+  margin-top: 6px;
+  color: #737272;
+}
