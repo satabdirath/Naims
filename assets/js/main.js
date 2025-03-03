@@ -1,113 +1,48 @@
-(function() {
-    "use strict";
-  
-    function toggleScrolled() {
-      const selectBody = document.querySelector('body');
-      const selectHeader = document.querySelector('#header');
-      if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-      window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
-    }
-  
-    document.addEventListener('scroll', toggleScrolled);
-    window.addEventListener('load', toggleScrolled);
-  
-    const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
-  
-    function mobileNavToogle() {
-      document.querySelector('body').classList.toggle('mobile-nav-active');
-      mobileNavToggleBtn.classList.toggle('bi-list');
-      mobileNavToggleBtn.classList.toggle('bi-x');
-    }
-    mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
-  
-    document.querySelectorAll('#navmenu a').forEach(navmenu => {
-      navmenu.addEventListener('click', () => {
-        if (document.querySelector('.mobile-nav-active')) {
-          mobileNavToogle();
-        }
-      });
-  
-    });
-  
-    document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-      navmenu.addEventListener('click', function(e) {
-        e.preventDefault();
-        this.parentNode.classList.toggle('active');
-        this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-        e.stopImmediatePropagation();
-      });
-    });
-  
-    const preloader = document.querySelector('#preloader');
-    if (preloader) {
-      window.addEventListener('load', () => {
-        preloader.remove();
-      });
-    }
-  
-    function aosInit() {
-      AOS.init({
-        duration: 600,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-      });
-    }
-    window.addEventListener('load', aosInit);
-  
-    const glightbox = GLightbox({
-      selector: '.glightbox'
-    });
-  
-    document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
-      let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
-      let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
-      let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
-  
-      let initIsotope;
-      imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
-        initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
-          itemSelector: '.isotope-item',
-          layoutMode: layout,
-          filter: filter,
-          sortBy: sort
-        });
-      });
-  
-      isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-        filters.addEventListener('click', function() {
-          isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
-          this.classList.add('filter-active');
-          initIsotope.arrange({
-            filter: this.getAttribute('data-filter')
-          });
-          if (typeof aosInit === 'function') {
-            aosInit();
-          }
-        }, false);
-      });
-  
-    });
-  
-    function initSwiper() {
-      document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-        let config = JSON.parse(
-          swiperElement.querySelector(".swiper-config").innerHTML.trim()
-        );
-  
-        if (swiperElement.classList.contains("swiper-tab")) {
-          initSwiperWithCustomPagination(swiperElement, config);
-        } else {
-          new Swiper(swiperElement, config);
-        }
-      });
-    }
-  
-    window.addEventListener("load", initSwiper);
-  
-    new PureCounter();
-  
-  })();
-  
+// ---------------slider-scroll----------------------------
+let slideIndex = 1;
+showSlides(slideIndex);
 
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    const slides = document.getElementsByClassName("slide");
+    const dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";  
+    dots[slideIndex - 1].className += " active";
+}
+// --------------------------javascript for why choose us section------------------------------------
+let ball = document.getElementById("ballID");
  
+        var myVar = setInterval(spostaDiv, 90);
+        var margin = 0;
+ 
+        let l = window.screen.width;
+        let w = 1300;
+ 
+        function spostaDiv() {
+            console.log(w);
+            if (margin == w) {
+                margin = 0 + "px";
+            } else {
+                ball.style.marginLeft = margin + "px";
+            }
+            margin += 10;
+        }
