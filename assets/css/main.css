@@ -1959,7 +1959,10 @@ section-title-sub-heading {
 .services-slider {
   overflow: hidden;
   max-width: 1200px;
-  margin: 0 10px 25px;
+  /* margin: 0 10px 25px; */
+  margin-inline: auto;
+  margin-bottom: 25px;
+  padding-inline: 10px;
 }
 
 .services-card .services-card-item .service-icon {
