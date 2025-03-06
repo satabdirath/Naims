@@ -1680,13 +1680,13 @@ section-title-sub-heading {
 
 .icon.mobile-icon {
   position: fixed;
-  bottom: 80px;
+  bottom: 50%;
   right: 10px;
-  background: rgb(165, 1, 1);
+  background: rgb(126, 123, 123);
   color: white;
   font-size: 24px;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   z-index: 9999;
   display: flex;
@@ -1704,9 +1704,9 @@ section-title-sub-heading {
 
 #whatsapp-icon {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: rgb(165, 1, 1);
+  bottom: 40%;
+  right: 10px;
+  background: rgb(174, 170, 170);
   color: #fff;
   font-size: 24px;
   width: 50px;
@@ -1950,6 +1950,37 @@ section-title-sub-heading {
   border-radius: 16px;
 }
 
+.howwork-slider {
+  width: 900px;
+  height: 400px;
+  /* background-color: #007bff; */
+  /* border: 5px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .16);
+  position: relative;
+
+}
+.howwork-img {
+  width: 350px;
+  padding: 30px;
+  border-radius: 16px;
+}
+.howwork-img img {
+  border-radius: 16px;
+}
+.howwork-content {
+position: absolute;
+width:  350px;
+border: 1px solid gray;
+left: -56%;
+top: 80%;
+z-index: 999999999;
+background-color: #fff;
+border-radius: 8px;
+transform: translate(-50%);
+}
 .swiper-button-prev {
   color: #b4292d;
 }
@@ -1977,6 +2008,15 @@ section-title-sub-heading {
   margin-inline: auto;
   margin-bottom: 25px;
   padding-inline: 10px;
+}
+.howwork-section-slider {
+  overflow: hidden;
+  max-width: 600px;
+  /* margin: 0 10px 25px; */
+  margin-inline: auto;
+  margin-bottom: 25px;
+  padding-inline: 10px;
+  margin-top: 10px;
 }
 
 .services-card .services-card-item .service-icon {
@@ -3325,6 +3365,11 @@ time {
 
 .dot.active {
   background-color: #b4292d;
+}
+
+.banner-content {
+  padding-inline: 40px;
+  top: 10%;
 }
 
 /* ---------------------------main-section modulr section----------------- */

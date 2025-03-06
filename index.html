@@ -103,8 +103,16 @@
    <section>
       <div class="slider">
          <div class="slides">
-            <div class="slide active">
+            <div class="slide active position-relative">
                <img src="/Naims/assets/img/hero-carousel/hero-carousel-3.png" alt="Image 1">
+               <div class=" z-5 position-absolute text-center  banner-content">
+                  <h1 class="text-white">Turning Ordinary Spaces into Extraordinary, makes
+                     your vision a reality!
+
+                     
+                  </h1>
+                  <button type="button" class="btn btn-danger btn-lg">Book Free Consultation</button>
+               </div>
             </div>
             <div class="slide">
                <img src="/Naims/assets/img/hero-carousel/hero-carousel-4.png" alt="Image 2">
@@ -497,24 +505,32 @@
    </section>
    <!-- ---------------------------------------------------How naims interior works-- -->
    <section>
-      <div class="m-2 p-4">
-         <h3>How Naimss Interior Works? </h3>
-         <div class="outer-container">
-            <div class="interior-work">
-               <div class="work">
+      <div class="services-container swiper">
+         <div class="howwork-section-slider">
+            <h2 class="mb-5">How Naims Interior Works</h2>
+            <div class="services-card swiper-wrapper">
+               <div class="howwork-slider swiper-slide">
+                  <div class="howwork-img">
+                     <img src="/Naims/assets/img/Bedroom-Design.png" alt="" class="w-100">
+                  </div>
+                  <div class="howwork-content">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate velit, labore
+                        laborum totam repudiandae voluptates aperiam odit</p>
+                  </div>
                </div>
-               <div class="work-content">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsum necessitatibus dolorem cumque
-                  velit quae fugiat quia veniam quam accusamus! Ullam repudiandae explicabo nam dolor expedita nisi iure
-                  sapiente ducimus!
-               </div>
+
+
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
          </div>
       </div>
    </section>
+
    <!-- -------------------------------------reviews customer------------ -->
    <section>
-      <div class="services-container swiper">
+      <div class="services-container swiper mt-5">
          <div class="services-slider">
             <h2>Take a look at some of the Reviews from our customers.</h2>
             <div class="services-card swiper-wrapper">
@@ -537,7 +553,8 @@
                               </div>
                            </div>
                         </div>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, magni id.</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+                           magni id.</p>
                      </div>
                   </div>
                </div>
@@ -560,7 +577,8 @@
                               </div>
                            </div>
                         </div>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, magni id.</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+                           magni id.</p>
                      </div>
                   </div>
                </div>
@@ -583,7 +601,8 @@
                               </div>
                            </div>
                         </div>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, magni id.</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+                           magni id.</p>
                      </div>
                   </div>
                </div>
@@ -606,7 +625,8 @@
                               </div>
                            </div>
                         </div>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, magni id.</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+                           magni id.</p>
                      </div>
                   </div>
                </div>
@@ -629,7 +649,8 @@
                               </div>
                            </div>
                         </div>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, magni id.</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+                           magni id.</p>
                      </div>
                   </div>
                </div>
@@ -652,11 +673,12 @@
                               </div>
                            </div>
                         </div>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, magni id.</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+                           magni id.</p>
                      </div>
                   </div>
                </div>
-               
+
 
             </div>
             <div class="swiper-pagination"></div>
@@ -665,112 +687,7 @@
          </div>
       </div>
    </section>
-   <section id="testimonials" class="testimonials section">
-      <!-- Section Title -->
-      <div class="container section-title" ">
-         <h2>Testimonials</h2>
-         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div>
-      <!-- End Section Title -->
-      <div class="container" >
-         <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 600,
-                    "autoplay": {
-                      "delay": 5000
-                    },
-                    "slidesPerView": "auto",
-                    "pagination": {
-                      "el": ".swiper-pagination",
-                      "type": "bullets",
-                      "clickable": true
-                    },
-                    "breakpoints": {
-                      "320": {
-                        "slidesPerView": 3,
-                        "spaceBetween": 40
-                      },
-                      "1200": {
-                        "slidesPerView": 3,
-                        "spaceBetween": 20
-                      }
-                    }
-                  }
-               </script>
-            <div class="swiper-wrapper">
-               <div class="swiper-slide">
-                  <div class="testimonial-wrap">
-                     <div class="testimonial-item">
-                        <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                        <h3>Saul Goodman</h3>
-                        <h4>Ceo &amp; Founder</h4>
-                        <div class="stars">
-                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                              class="bi bi-star-fill"></i>
-                        </div>
-                        <p>
-                           <i class="bi bi-quote quote-icon-left"></i>
-                           <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                              Ipsum has been the industry's standard dummy text ever since the 1500s.</span>
-                           <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <!-- End testimonial item -->
-               <div class="swiper-slide">
-                  <div class="testimonial-wrap">
-                     <div class="testimonial-item">
-                        <img src="assets/img/testimonials/Ashfaq-Badsha-image.png" class="testimonial-img" alt="">
-                        <h3>Ashfaq Badsha</h3>
-                        <h4>Humming Gardens, Kelambakkam</h4>
-                        <div class="stars">
-                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                              class="bi bi-star-fill"></i>
-                        </div>
-                        <p>
-                           <i class="bi bi-quote quote-icon-left"></i>
-                           <span>Naim’s interior was astonishing! From design to coordination everything was done
-                              perfectly, the time was on, the budget too was managed well and the quality was great
-                              too; not only this team was friendly, cooperative and highly professional. I would
-                              definitely recommend them to anyone.</span>
-                           <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <!-- End testimonial item -->
-               <div class="swiper-slide">
-                  <div class="testimonial-wrap">
-                     <div class="testimonial-item">
-                        <img src="assets/img/testimonials/Ravi-Shankar-S-Image-.png" class="testimonial-img" alt="">
-                        <h3>Ravi Shankar S</h3>
-                        <h4>Pacifica Aurum Happiness, Padur</h4>
-                        <div class="stars">
-                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                              class="bi bi-star-fill"></i>
-                        </div>
-                        <p>
-                           <i class="bi bi-quote quote-icon-left"></i>
-                           <span>“Imtiyaz and his team are skilled woodworkers. While their work is good, they could
-                              improve on the final finishing. I’d recommend them for interior projects. [Attach photo
-                              of TV stand]”</span>
-                           <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <!-- End testimonial item -->
-            </div>
-            <div class="swiper-pagination"></div>
-         </div>
-      </div>
-   </section>
+
    <!-- -------------------------------book free consultaion------------------------------------ -->
    <section>
       <div class="p-4 m-2 my-3">
@@ -780,7 +697,7 @@
             </div>
          </div>
          <div>
-            <p>Recent dream home interiors delivered</p>
+            <h3>Recent dream home interiors delivered</h3>
          </div>
          <div class="d-lg-flex justify-content-lg-around justify-content-center  align-items-center">
 
@@ -944,8 +861,8 @@
                <button class="border-0">See more</button>
             </div>
          </div>
-         <div class="d-lg-flex justify-content-lg-around justify-content-center align-items-center">
-            <div class="card mx-auto">
+         <div class="d-flex justify-content-center align-items-center">
+            <div class="card mx-auto mt-3 mx-lg-2">
                <img src="/Naims/assets/img/features-4.jpg" alt="">
                <div class="card__content">
                   <p class="card__title">Card Title</p>
@@ -955,7 +872,7 @@
                      ullamco.</p>
                </div>
             </div>
-            <div class="card mx-auto mt-3">
+            <div class="card mx-auto mt-3 mx-lg-2">
                <img src="/Naims/assets/img/features-4.jpg" alt="">
                <div class="card__content">
                   <p class="card__title">Card Title</p>
@@ -965,7 +882,7 @@
                      ullamco.</p>
                </div>
             </div>
-            <div class="card mx-auto mt-3">
+            <div class="card mx-auto mt-3 mx-lg-2">
                <img src="/Naims/assets/img/features-4.jpg" alt="">
                <div class="card__content">
                   <p class="card__title">Card Title</p>
@@ -1003,7 +920,7 @@
       </section>
    </main>
    <!-- -----------------------------------------FAQ----------------------------------------------- -->
-   <div class="accordion accordion-flush" id="accordionFlushExample">
+   <div class="accordion accordion-flush mx-lg-5" id="accordionFlushExample">
       <div class="accordion-item">
          <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1187,7 +1104,7 @@
    </div>
    <!-- ---------------------------------swiper-slide-------------------------------- -->
    <script>
-      
+
    </script>
    <!-- -----------------------swiper -->
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

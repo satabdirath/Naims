@@ -70,7 +70,7 @@ const swiper = new Swiper('.services-slider', {
   "loop": true,
   "speed": 600,
   "autoplay": {
-    "delay": 5000
+    "delay": 2000
   },
   grabCursor: true,
   spaceBetween: 30,
@@ -103,7 +103,7 @@ const swiper = new Swiper('.services-slider', {
 });
 
 
-// ----------------------------------------------
+// ----------------------------------------------interior section slider
 const drag = new Swiper('.interior-section-slider', {
 
   "loop": true,
@@ -133,6 +133,41 @@ const drag = new Swiper('.interior-section-slider', {
     },
     1024: {
       slidesPerView: 3
+    }
+  }
+});
+
+// ------------------------------------------------------how naims work-------------------------------
+
+const howwork = new Swiper('.howwork-section-slider', {
+
+  "loop": true,
+  grabCursor: true,
+  spaceBetween: 30,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+
+    0: {
+      slidesPerView: 1
+    },
+    620: {
+      slidesPerView: 1
+    },
+    1024: {
+      slidesPerView: 1
     }
   }
 });
