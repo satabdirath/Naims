@@ -50,18 +50,89 @@ function spostaDiv() {
 // ---------------------------------sideBar ---------------------------------------------
 
 
-document.getElementById('toggle-button').addEventListener('click', function() {
+document.getElementById('toggle-button').addEventListener('click', function () {
   const sidebar = document.getElementById('slide-2');
   const mainContent = document.getElementById('main-content');
 
   if (sidebar.style.left === '0px') {
-      sidebar.style.left = '-250px'; // Hide sidebar
-      // mainContent.style.marginLeft = '0'; // Adjust main content
+    sidebar.style.left = '-250px'; // Hide sidebar
+    // mainContent.style.marginLeft = '0'; // Adjust main content
   } else {
-      sidebar.style.left = '0px'; // Show sidebar
-      // mainContent.style.marginLeft = '250px'; // Adjust main content
+    sidebar.style.left = '0px'; // Show sidebar
+    // mainContent.style.marginLeft = '250px'; // Adjust main content
   }
 });
 
 
 // --------------------------our Services-----------------------
+const swiper = new Swiper('.services-slider', {
+
+  "loop": true,
+  "speed": 600,
+  "autoplay": {
+    "delay": 5000
+  },
+  grabCursor: true,
+  spaceBetween: 30,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+
+    0: {
+      slidesPerView: 1
+    },
+    620: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
+
+
+// ----------------------------------------------
+const drag = new Swiper('.interior-section-slider', {
+
+  "loop": true,
+  grabCursor: true,
+  spaceBetween: 30,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+
+    0: {
+      slidesPerView: 1
+    },
+    620: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
