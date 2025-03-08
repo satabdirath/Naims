@@ -1930,8 +1930,9 @@ section-title-sub-heading {
 /* -----------------------------------------------------Our Services --------------------------*/
 .services-card .services-card-item {
   width: 200px;
-  padding: 35px;
+  padding-inline: 10px;
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1951,11 +1952,12 @@ section-title-sub-heading {
 }
 
 .howwork-slider {
-  width: 900px;
-  height: 400px;
+  /* width: 900px;
+  height: 400px; */
   /* background-color: #007bff; */
   /* border: 5px solid red; */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .16);
@@ -1975,18 +1977,30 @@ position: absolute;
 width:  350px;
 border: 1px solid gray;
 left: -56%;
-top: 80%;
-z-index: 999999999;
+top: 70%;
+z-index: 999;
 background-color: #fff;
 border-radius: 8px;
 transform: translate(-50%);
 }
 .swiper-button-prev {
   color: #b4292d;
+  background-color: gray;
+  border-radius: 50%;
 }
 
 .swiper-button-next {
   color: #b4292d;
+  background-color: gray;
+  border-radius: 50%;
+}
+.swiper-button-prev:after {
+  font-size: 20px;
+  padding-inline: 20px;
+}
+.swiper-button-next:after {
+  font-size: 20px;
+  padding-inline: 20px;
 }
 
 .swiper-pagination-bullet-active {
@@ -2020,8 +2034,8 @@ transform: translate(-50%);
 }
 
 .services-card .services-card-item .service-icon {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   background-color: #141414;
   margin-bottom: 40px;
@@ -2034,7 +2048,7 @@ transform: translate(-50%);
   font-size: 1.15rem;
   color: #000;
   font-weight: 500;
-  margin: 14px 0 40px;
+  margin: 14px 0 5px;
 }
 
 /* card why choose naims interior */
@@ -3428,8 +3442,22 @@ time {
   font-size: 24px;
 }
 
-
-
+.slider-last-div {
+  background: color-mix(in srgb, #d9534f, transparent 80%);
+  height: 240px;
+  /* position: relative;
+  z-index: 999999; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slider-last-div::after {
+  background-image: url(/Naims/assets/img/pattern-bg.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .why-choose {
   display: flex;
@@ -4294,4 +4322,12 @@ time {
     position: static;
     left: auto;
   }
+}
+
+/* -----------------------------FAQ------------------------------ */
+.accordion-button:not(.collapsed) {
+  background: color-mix(in srgb, #d9534f, transparent 80%);
+}
+.accordion-button:focus {
+  box-shadow: 1px 1px 0px 1px #d9534f;
 }

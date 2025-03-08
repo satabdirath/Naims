@@ -106,7 +106,7 @@ const swiper = new Swiper('.services-slider', {
 // ----------------------------------------------interior section slider
 const drag = new Swiper('.interior-section-slider', {
 
-  "loop": true,
+  "loop": false,
   grabCursor: true,
   spaceBetween: 30,
 
@@ -141,9 +141,15 @@ const drag = new Swiper('.interior-section-slider', {
 
 const howwork = new Swiper('.howwork-section-slider', {
 
-  "loop": true,
+  "loop": false,
+ 
+  keyword: true,
+  mousewheel: true,
   grabCursor: true,
   spaceBetween: 30,
+  centeredSlides: false,
+
+    simulateTouch:false,
 
   // If we need pagination
   pagination: {
@@ -152,11 +158,14 @@ const howwork = new Swiper('.howwork-section-slider', {
     dynamicBullets: true,
   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      
+      
+    },
+  
 
   breakpoints: {
 
