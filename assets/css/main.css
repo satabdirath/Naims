@@ -1937,6 +1937,7 @@ section-title-sub-heading {
   height: 436px;
 
 }
+
 .services-card .recent-card-item {
   width: 200px;
   /* padding-inline: 10px; */
@@ -1952,6 +1953,7 @@ section-title-sub-heading {
   /* overflow-y: scroll; */
   /* height: 436px; */
 }
+
 .all-slider {
   border-radius: 16px;
 }
@@ -1973,44 +1975,50 @@ section-title-sub-heading {
   position: relative;
 
 }
+
 .howwork-img {
   width: 350px;
   padding: 30px;
   border-radius: 16px;
 }
+
 .howwork-img img {
   border-radius: 16px;
 }
+
 .howwork-content {
-position: absolute;
-width:  350px;
-border: 1px solid gray;
-left: -56%;
-top: 70%;
-z-index: 999;
-background-color: #fff;
-border-radius: 8px;
-transform: translate(-50%);
+  position: absolute;
+  width: 350px;
+  border: 1px solid gray;
+  left: -56%;
+  top: 70%;
+  z-index: 999;
+  background-color: #fff;
+  border-radius: 8px;
+  transform: translate(-50%);
 }
+
 .swiper-button-prev {
   color: #b4292d;
-    background-color: gray;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
+  background-color: rgba(80, 80, 80, 60%);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
 }
 
 .swiper-button-next {
   color: #b4292d;
-    background-color: gray;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
+  background-color: rgba(80, 80, 80, 60%);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
 }
+
 .swiper-button-prev:after {
   font-size: 20px;
   padding-inline: 20px;
 }
+
 .swiper-button-next:after {
   font-size: 20px;
   padding-inline: 20px;
@@ -2028,6 +2036,7 @@ transform: translate(-50%);
   margin-bottom: 25px;
   padding-inline: 10px;
 }
+
 .testimonial-slider {
   overflow: hidden;
   max-width: 1200px;
@@ -2037,6 +2046,7 @@ transform: translate(-50%);
   margin-bottom: 25px;
   padding-inline: 10px;
 }
+
 .interior-section-slider {
   overflow: hidden;
   max-width: 1200px;
@@ -2045,6 +2055,7 @@ transform: translate(-50%);
   margin-bottom: 25px;
   padding-inline: 10px;
 }
+
 .howwork-section-slider {
   overflow: hidden;
   max-width: 600px;
@@ -2054,6 +2065,7 @@ transform: translate(-50%);
   padding-inline: 10px;
   margin-top: 10px;
 }
+
 .recent-slider {
   overflow: hidden;
   max-width: 1200px;
@@ -2062,6 +2074,7 @@ transform: translate(-50%);
   margin-bottom: 25px;
   padding-inline: 10px;
 }
+
 .services-card .services-card-item .service-icon {
   width: 90px;
   height: 90px;
@@ -3478,6 +3491,7 @@ time {
   align-items: center;
   justify-content: center;
 }
+
 .slider-last-div::after {
   background-image: url(/Naims/assets/img/pattern-bg.webp);
   background-position: center;
@@ -4087,6 +4101,7 @@ time {
   width: 127px;
   padding-inline: 7px;
 }
+
 .sidebar-menu {
   padding-left: 1rem;
 }
@@ -4158,7 +4173,8 @@ time {
   min-height: 194px;
   position: relative;
 }
-.testimonial-img{
+
+.testimonial-img {
   width: 100px;
   /* height: 100px; */
 }
@@ -4177,26 +4193,26 @@ time {
 
 .review-video-icon {
   height: 65px;
-    text-align: center;
-    width: 65px;
-    margin: auto;
-    border-radius: 50px;
-    border: 2px solid #fff;
-    position: relative;
-    transition: .3sease-in-out;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    text-align: center;
-    right: 0;
-    color: #fff;
-    margin: auto;
-    transform: translateY(-50%);
-    z-index: 999;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
+  text-align: center;
+  width: 65px;
+  margin: auto;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  position: relative;
+  transition: .3sease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  right: 0;
+  color: #fff;
+  margin: auto;
+  transform: translateY(-50%);
+  z-index: 999;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .review-video-icon::before {
@@ -4263,7 +4279,7 @@ time {
 
 .testimonials .testimonial-item .stars {
   margin: 10px 0;
-  margin-left:40px;
+  margin-left: 40px;
 }
 
 .testimonials .testimonial-item .stars i {
@@ -4320,18 +4336,18 @@ time {
 
 @media (max-width: 767px) {
   .testimonials .testimonial-item h3 {
-    
+
     margin: 10px 0 5px 5px;
   }
-  
+
   .testimonials .testimonial-item h4 {
-  
+
     margin-left: 5px;
   }
-  
+
   .testimonials .testimonial-item .stars {
- 
-    margin-left:5px;
+
+    margin-left: 5px;
   }
 }
 
@@ -4361,6 +4377,7 @@ time {
 .accordion-button:not(.collapsed) {
   background: color-mix(in srgb, #d9534f, transparent 80%);
 }
+
 .accordion-button:focus {
   box-shadow: 1px 1px 0px 1px #d9534f;
 }
