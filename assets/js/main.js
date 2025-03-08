@@ -29,23 +29,23 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 // --------------------------javascript for why choose us section------------------------------------
-let ball = document.getElementById("ballID");
+// let ball = document.getElementById("ballID");
 
-var myVar = setInterval(spostaDiv, 90);
-var margin = 0;
+// var myVar = setInterval(spostaDiv, 90);
+// var margin = 0;
 
-let l = window.screen.width;
-let w = 1300;
+// let l = window.screen.width;
+// let w = 1300;
 
-function spostaDiv() {
-  console.log(w);
-  if (margin == w) {
-    margin = 0 + "px";
-  } else {
-    ball.style.marginLeft = margin + "px";
-  }
-  margin += 10;
-}
+// function spostaDiv() {
+//   console.log(w);
+//   if (margin == w) {
+//     margin = 0 + "px";
+//   } else {
+//     ball.style.marginLeft = margin + "px";
+//   }
+//   margin += 10;
+// }
 
 // ---------------------------------sideBar ---------------------------------------------
 
@@ -241,6 +241,40 @@ const recent = new Swiper('.recent-slider', {
     },
     1024: {
       slidesPerView: 4
+    }
+  }
+});
+
+// -------------------------------------Blog section--------------------------------
+const blog = new Swiper('.blog-slider', {
+
+  
+  grabCursor: true,
+  spaceBetween: 30,
+
+  // // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  //   dynamicBullets: true,
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+
+    0: {
+      slidesPerView: 1
+    },
+    620: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
     }
   }
 });
