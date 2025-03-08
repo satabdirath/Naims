@@ -178,7 +178,7 @@ h6 {
 .mobile-icon {
   width: 20px;
   height: 20px;
-  margin-right: 8px;
+  margin-right: 5px;
 }
 
 .call-text {
@@ -1696,10 +1696,6 @@ section-title-sub-heading {
   transition: all 0.3s ease;
 }
 
-.icon.mobile-icon:hover {
-  background: rgb(196, 0, 0);
-  text-decoration: none;
-}
 
 
 #whatsapp-icon {
@@ -1720,10 +1716,7 @@ section-title-sub-heading {
   transition: all 0.3s ease;
 }
 
-#whatsapp-icon:hover {
-  background: rgb(196, 0, 0);
-  text-decoration: none;
-}
+
 
 
 @media (max-width: 772px) {
@@ -1944,7 +1937,21 @@ section-title-sub-heading {
   height: 436px;
 
 }
-
+.services-card .recent-card-item {
+  width: 200px;
+  /* padding-inline: 10px; */
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  border-radius: 16px;
+  /* background-color:rgba(186, 33, 33, 0.5); */
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(11, 11, 11, 0.5);
+  /* overflow-y: scroll; */
+  /* height: 436px; */
+}
 .all-slider {
   border-radius: 16px;
 }
@@ -1987,14 +1994,18 @@ transform: translate(-50%);
 }
 .swiper-button-prev {
   color: #b4292d;
-  background-color: gray;
-  border-radius: 50%;
+    background-color: gray;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
 }
 
 .swiper-button-next {
   color: #b4292d;
-  background-color: gray;
-  border-radius: 50%;
+    background-color: gray;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
 }
 .swiper-button-prev:after {
   font-size: 20px;
@@ -2043,7 +2054,14 @@ transform: translate(-50%);
   padding-inline: 10px;
   margin-top: 10px;
 }
-
+.recent-slider {
+  overflow: hidden;
+  max-width: 1200px;
+  /* margin: 0 10px 25px; */
+  margin-inline: auto;
+  margin-bottom: 25px;
+  padding-inline: 10px;
+}
 .services-card .services-card-item .service-icon {
   width: 90px;
   height: 90px;
@@ -2333,7 +2351,7 @@ transform: translate(-50%);
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 999999;
 }
 
 .position-relative {
@@ -3384,9 +3402,6 @@ time {
   cursor: pointer;
 }
 
-.slide.active {
-  background-color: #d92b2b;
-}
 
 .dot.active {
   background-color: #b4292d;
@@ -4071,6 +4086,9 @@ time {
 .side-logo {
   width: 127px;
   padding-inline: 7px;
+}
+.sidebar-menu {
+  padding-left: 1rem;
 }
 
 /* ------------------------------------------why choose naims-------------------------- */
