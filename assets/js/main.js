@@ -142,14 +142,14 @@ const drag = new Swiper('.interior-section-slider', {
 const howwork = new Swiper('.howwork-section-slider', {
 
   "loop": false,
- 
+
   keyword: true,
   mousewheel: true,
   grabCursor: true,
   spaceBetween: 30,
   centeredSlides: false,
 
-    simulateTouch:false,
+  simulateTouch: false,
 
   // If we need pagination
   pagination: {
@@ -158,14 +158,14 @@ const howwork = new Swiper('.howwork-section-slider', {
     dynamicBullets: true,
   },
 
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-      
-      
-    },
-  
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+
+
+  },
+
 
   breakpoints: {
 
@@ -180,3 +180,32 @@ const howwork = new Swiper('.howwork-section-slider', {
     }
   }
 });
+
+// ------------------------------------testimonial-------------------------------------
+
+const testimonial = new Swiper('.testimonial-slider', {
+
+
+  "loop": true,
+  "speed": 600,
+  "autoplay": {
+    "delay": 5000
+  },
+  "slidesPerView": "auto",
+  "pagination": {
+    "el": ".swiper-pagination",
+    "type": "bullets",
+    "clickable": true
+  },
+  "breakpoints": {
+    "320": {
+      "slidesPerView": 1,
+      "spaceBetween": 40
+    },
+    "1200": {
+      "slidesPerView": 2,
+      "spaceBetween": 20
+    }
+  }
+
+})
