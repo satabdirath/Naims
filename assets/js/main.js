@@ -52,14 +52,22 @@ function showSlides(n) {
 
 document.getElementById('toggle-button').addEventListener('click', function () {
   const sidebar = document.getElementById('slide-2');
-  const mainContent = document.getElementById('main-content');
 
   if (sidebar.style.left === '0px') {
     sidebar.style.left = '-250px'; // Hide sidebar
-    // mainContent.style.marginLeft = '0'; // Adjust main content
   } else {
     sidebar.style.left = '0px'; // Show sidebar
-    // mainContent.style.marginLeft = '250px'; // Adjust main content
+  }
+});
+
+// Add event listener to the document
+document.addEventListener('click', function (event) {
+  const sidebar = document.getElementById('slide-2');
+  const toggleButton = document.getElementById('toggle-button');
+
+  // Check if the click was outside the sidebar and the toggle button
+  if (!sidebar.contains(event.target) && !toggleButton.contains(event.target)) {
+    sidebar.style.left = '-250px'; // Hide sidebar
   }
 });
 
