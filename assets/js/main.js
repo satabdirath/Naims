@@ -286,3 +286,42 @@ const blog = new Swiper('.blog-slider', {
     }
   }
 });
+
+
+
+
+// ----------------------------------------five Star Fuction------------------------------------------in feedback-----
+// script.js
+// const stars = document.querySelectorAll('.star');
+// const ratingMessage = document.getElementById('rating-message');
+// let selectedRating = 0;
+
+// stars.forEach(star => {
+//     star.addEventListener('click', () => {
+//         selectedRating = star.getAttribute('data-value');
+//         updateStars(selectedRating);
+//         displayRatingMessage(selectedRating);
+//     });
+
+//     star.addEventListener('mouseover', () => {
+//         updateStars(star.getAttribute('data-value'));
+//     });
+
+//     star.addEventListener('mouseout', () => {
+//         updateStars(selectedRating);
+//     });
+// });
+
+// function updateStars(rating) {
+//     stars.forEach(star => {
+//         if (star.getAttribute('data-value') <= rating) {
+//             star.classList.add('selected');
+//         } else {
+//             star.classList.remove('selected');
+//         }
+//     });
+// }
+
+// function displayRatingMessage(rating) {
+//     ratingMessage.textContent = `You rated us: ${rating} star${rating > 1 ? 's' : ''}`;
+// }

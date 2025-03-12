@@ -1972,7 +1972,7 @@ section-title-sub-heading {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .16);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 1.16);
   position: relative;
 
 }
@@ -1991,12 +1991,12 @@ section-title-sub-heading {
   position: absolute;
   width: 350px;
   border: 1px solid gray;
-  left: -56%;
-  top: 70%;
-  z-index: 999;
+  /* left: -56%; */
+  top: 88%;
+  /* z-index: 999; */
   background-color: #fff;
   border-radius: 8px;
-  transform: translate(-50%);
+  /* transform: translate(-50%); */
 }
 
 .swiper-button-prev {
@@ -2072,6 +2072,7 @@ section-title-sub-heading {
   margin-bottom: 25px;
   padding-inline: 10px;
   margin-top: 10px;
+  padding-bottom: 70px;
 }
 
 .recent-slider {
@@ -4493,4 +4494,50 @@ time {
 /* -------------------------------------------address--------------------------------------------------- */
 .naims-address h3 {
   color: #850f0b;
+}
+
+/* ------------------------------------------------refer and earn--------------------------- */
+
+.share-now {
+  background-color: rgba(189, 189, 237, 0.88)
+}
+
+/* ----------------------------------------------5 star function------------------------------------ */
+
+
+.star-rating {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.star {
+  color: #ccc; /* Default color */
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: #f39c12; /* Color on hover */
+}
+
+.star.selected {
+  color: #f39c12; /* Color for selected stars */
+}
+/* ----------------------------------------------5 star function-2------------------------------------ */
+
+.rating-stars {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.rating-star {
+  color: #ccc; /* Default color */
+}
+
+.rating-star:hover,
+.rating-star:hover ~ .rating-star {
+  color: #f39c12; /* Color on hover */
+}
+
+.rating-star.selected {
+  color: #f39c12; /* Color for selected stars */
 }

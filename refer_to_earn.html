@@ -104,105 +104,93 @@
         <div>
             <img src="/Naims/assets/img/refer-to-earn.jpg" class="w-100">
         </div>
-        <div class="p-3">
-            <h2>Join the NAIMS Interior Team</h2>
-            <p>
-                To view the specific job requirements for each position at NAIMS Interior, visit their career page. Each
-                job listing will include details about qualifications, experience, and skills needed for the role.
-            </p>
+    </section>
+    <!-- -----------------------------refer and earn section------------------------------------ -->
+    <section>
+        <div class="d-flex justify-content-evenly align-items-center">
+            <div>
+                <div>
+                    <h2 class="text-danger">Earn Upto 10000* </h2>
+                </div>
+                <h4>Per Refer</h4>
+            </div>
+            <div>
+                <h2 class="text-primary fst-italic">Refer your friends and families to get rewarded!</h2>
+                <h4>Receive Rs <span class="text-danger">10,000*</span> in Cash / Gift Vouchers </h4>
+            </div>
         </div>
-        <div class="p-3 pt-0">
-            <b>How to Apply:</b>
-            <b>To apply for a position at NAIMS Interior:</b>
-            <p>Visit the official career page at NAIMS Interior Career.</p>
-            <p>Browse through available job listings.</p>
-            <p>Click "More Details" for the desired job role.</p>
-            <p>Submit your application via email to admin@naimsinterior.com. or use the provided contact details.</p>
+    </section>
+    <!-- -------------------------------------------share Now--------------------------------------------- -->
+    <section>
+        <div class="d-flex flex-column justify-content-center align-items-center share-now">
+            <a class="btn btn-danger disabled" role="button" aria-disabled="true">Share Now</a>
+            <h3>On Call Share</h3>
+            <a href="tel:18001208230">
+                <i class="fa-solid fa-tty"></i>&nbsp;1800-120-8230
+            </a>
+            <p>(To know your referral status you can call us on the same number)</p>
+        </div>
+    </section>
+    <!-- ----------------------------------refer and earn form---------------------------------------------- -->
+    <section class="p-0">
+        <div class="contact-container m-0 ">
+            <div class="get-touch w-50 ">
+                <img src="/Naims/assets/img/Refer-To-Friends-Earn-Manny-1024x512.png" class="w-100">
+            </div>
+            <!-- Contact Form Section -->
+            <form id="contact-form" class="contact-us">
+                <div class="secondline">
+                    Contact us for
+                    <span class="txt-rotate" style="color: red;" data-period="1200"
+                        data-rotate='[ "Modular Kitchen.", "Renovation.", "Full Home Interior." ]'></span>
+                    <span class="slash">|</span>
+                </div>
+                <div id="step-1" class="form-step active">
+
+                    <input type="text" placeholder="Enter your name" id="name" required />
+                    <input type="email" placeholder="Enter your email" id="email" required />
+                    <br>
+
+                    <div class="tel-container">
+                        <input id="phone" type="text" placeholder="Enter your phone number" name="phone" required
+                            maxlength="15" oninput="validatePhone(this)" onkeydown="validatePhonesKeyDown(event)" />
+                    </div>
+                    <label for="cover-letter">Message:</label>
+                    <textarea id="cover-letter" name="cover-letter" rows="4" cols="38" width="100%" required></textarea>
+                    <!--<button class="hero_button" type="button" id="back-2">Back</button>-->
+                    <button class="hero_button" type="submit" id="submit-btn">Submit</button>
+                </div>
+                <p>By submitting this form, you agree to the <a href="#" class="open-privacy-btn">Privacy Policy</a> and
+                    <a href="#" class="open-term-condition-btn">Terms of
+                        Use</a>.
+                </p>
+            </form>
         </div>
     </section>
     <section>
-        <form class="d-flex" role="search">
-            <div class="d-flex justify-content-center align-items-center">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <select id="country-select" class="form-control me-2" required>
-                    <option value="" disabled selected>All Job Category</option>
-                    <option value="USA">United States</option>
-                    <option value="CAN">Canada</option>
-                    <option value="GBR">United Kingdom</option>
-                    <option value="AUS">Australia</option>
-                    <option value="IND">India</option>
-                    <option value="GER">Germany</option>
-                    <option value="FRA">France</option>
-                    <option value="ITA">Italy</option>
-                    <option value="JPN">Japan</option>
-                    <option value="CHN">China</option>
-                    <!-- Add more countries as needed -->
-                </select>
-                <select id="country-select" class="form-control me-2" required>
-                    <option value="" disabled selected>All Job Type</option>
-                    <option value="USA">United States</option>
-                    <option value="CAN">Canada</option>
-                    <option value="GBR">United Kingdom</option>
-                    <option value="AUS">Australia</option>
-                    <option value="IND">India</option>
-                    <option value="GER">Germany</option>
-                    <option value="FRA">France</option>
-                    <option value="ITA">Italy</option>
-                    <option value="JPN">Japan</option>
-                    <option value="CHN">China</option>
-                    <!-- Add more countries as needed -->
-                </select>
-                <select id="country-select" class="form-control me-2" required>
-                    <option value="" disabled selected>All Job Location </option>
-                    <option value="USA">United States</option>
-                    <option value="CAN">Canada</option>
-                    <option value="GBR">United Kingdom</option>
-                    <option value="AUS">Australia</option>
-                    <option value="IND">India</option>
-                    <option value="GER">Germany</option>
-                    <option value="FRA">France</option>
-                    <option value="ITA">Italy</option>
-                    <option value="JPN">Japan</option>
-                    <option value="CHN">China</option>
-                    <!-- Add more countries as needed -->
-                </select>
-            </div>
-        </form>
-    </section>
-    <section>
-        <div class="d-flex justify-content-start align-items-center">
-            <div class="border m-3">
-                <div class="p-3">
-                    <h3>Digital Marketing</h3>
-                    <p>Digital</p>
-                    <p>Part Time</p>
-                    <p>Remote</p>
-                    <p>18-40</p>
-                    <p>Male-Female</p>
-                    <a href="/Naims/job.html" type="button">More Details</a>
-                </div>
-            </div>
-            <div class="border m-3">
-                <div class="p-3">
-                    <h3>Digital Marketing</h3>
-                    <p>Digital</p>
-                    <p>Part Time</p>
-                    <p>Remote</p>
-                    <p>18-40</p>
-                    <p>Male-Female</p>
-                    <a href="/Naims/job.html" type="button">More Details</a>
-                </div>
-            </div>
+        <div class="mx-5">
+            <h2>Term and Conditions</h2>
+            <ol>
+                <li>A successful referral is defined as a referred customer who does a meeting or places an order with
+                    NAIMS INTERIOR and pays 5% of total order value.</li>
+                <li>You will be eligible for a ₹10,000 referral bonus per successful referral. ₹ 2500 for a successful
+                    meeting and ₹ 7500 for a successful order.</li>
+                <li>Your payment ₹ 2500 will be processed after a successful meeting.₹ 7500 payment will be processed
+                    after any referred person makes a payment of 5% of the total order value.</li>
+                <li>Your payment will be processed directly to the account linked with your profile.</li>
+                <li>Minimum value of the referred order should be ₹ 4 Lacs woodwork.</li>
+                <li> Customers already existing in the NAIMS INTERIOR system will not be considered for the referral
+                    scheme.</li>
+                <li>Referral bonus cannot be combined or adjusted against any existing payment.</li>
+                <li>NAIMS INTERIOR reserves the right to end any or all the offers at its sole discretion without any
+                    prior notice.</li>
+                <li>NAIMS INTERIOR reserves the right to deny any suspected illegitimate case.</li>
+            </ol>
         </div>
     </section>
-
-
-
     <!-- ------------------------------------footer for mobile-mode-------------------- -->
     <div class="position-fixed d-md-none d-block">
         <div class="navigation">
-
-
             <ul>
                 <li class="list">
                     <a href="#">
@@ -290,6 +278,7 @@
                     <li><a href="#">Designing</a></li>
                     <li><a href="#">Remodelling</a></li>
                     <li><a href="#">Furnishing</a></li>
+                    <li><a href="/Naims/feedback.html">Feedback</a></li>
                 </ul>
             </div>
         </div>

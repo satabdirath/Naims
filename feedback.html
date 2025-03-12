@@ -51,7 +51,7 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="/Naims/refer_to_earn.html">Refer and Earn</a></li>
                     <li><a href="/Naims/career.html">Career</a></li>
-                    <li><a href="/Naims/contactus.html">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>--
             </nav>
             <div class="nav-icons">
@@ -99,105 +99,110 @@
             </ul>
         </div>
     </section>
-    <!-- -------------------------------career section------------------------------------ -->
+    <!-- ------------------------------------------------------feedback----------------------------- -->
     <section>
-        <div>
-            <img src="/Naims/assets/img/career-img.png" class="w-100">
+        <div class="mt-5 p-5 pb-0">
+            <h4>How satisfied are you with the overall design and execution of the project?</h4>
+            <select class="form-select form-select-sm" aria-label="Small select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
         </div>
-        <div class="p-3">
-            <h2>Join the NAIMS Interior Team</h2>
-            <p>
-                To view the specific job requirements for each position at NAIMS Interior, visit their career page. Each
-                job listing will include details about qualifications, experience, and skills needed for the role.
-            </p>
+        <div class="px-5 mt-3">
+            <h4>Did the final result meet your expectations?</h4>
+            <select class="form-select form-select-sm" aria-label="Small select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
         </div>
-        <div class="p-3 pt-0">
-            <b>How to Apply:</b>
-            <b>To apply for a position at NAIMS Interior:</b>
-            <p>Visit the official career page at NAIMS Interior Career.</p>
-            <p>Browse through available job listings.</p>
-            <p>Click "More Details" for the desired job role.</p>
-            <p>Submit your application via email to admin@naimsinterior.com. or use the provided contact details.</p>
-        </div>
-    </section>
-    <section>
-        <form class="d-flex" role="search">
-            <div class="d-flex justify-content-center align-items-center">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <select id="country-select" class="form-control me-2" required>
-                    <option value="" disabled selected>All Job Category</option>
-                    <option value="USA">United States</option>
-                    <option value="CAN">Canada</option>
-                    <option value="GBR">United Kingdom</option>
-                    <option value="AUS">Australia</option>
-                    <option value="IND">India</option>
-                    <option value="GER">Germany</option>
-                    <option value="FRA">France</option>
-                    <option value="ITA">Italy</option>
-                    <option value="JPN">Japan</option>
-                    <option value="CHN">China</option>
-                    <!-- Add more countries as needed -->
-                </select>
-                <select id="country-select" class="form-control me-2" required>
-                    <option value="" disabled selected>All Job Type</option>
-                    <option value="USA">United States</option>
-                    <option value="CAN">Canada</option>
-                    <option value="GBR">United Kingdom</option>
-                    <option value="AUS">Australia</option>
-                    <option value="IND">India</option>
-                    <option value="GER">Germany</option>
-                    <option value="FRA">France</option>
-                    <option value="ITA">Italy</option>
-                    <option value="JPN">Japan</option>
-                    <option value="CHN">China</option>
-                    <!-- Add more countries as needed -->
-                </select>
-                <select id="country-select" class="form-control me-2" required>
-                    <option value="" disabled selected>All Job Location </option>
-                    <option value="USA">United States</option>
-                    <option value="CAN">Canada</option>
-                    <option value="GBR">United Kingdom</option>
-                    <option value="AUS">Australia</option>
-                    <option value="IND">India</option>
-                    <option value="GER">Germany</option>
-                    <option value="FRA">France</option>
-                    <option value="ITA">Italy</option>
-                    <option value="JPN">Japan</option>
-                    <option value="CHN">China</option>
-                    <!-- Add more countries as needed -->
-                </select>
-            </div>
-        </form>
-    </section>
-    <section>
-        <div class="d-flex justify-content-start align-items-center">
-            <div class="border m-3">
-                <div class="p-3">
-                    <h3>Digital Marketing</h3>
-                    <p>Digital</p>
-                    <p>Part Time</p>
-                    <p>Remote</p>
-                    <p>18-40</p>
-                    <p>Male-Female</p>
-                    <a href="/Naims/job.html" type="button">More Details</a>
-                </div>
-            </div>
-            <div class="border m-3">
-                <div class="p-3">
-                    <h3>Digital Marketing</h3>
-                    <p>Digital</p>
-                    <p>Part Time</p>
-                    <p>Remote</p>
-                    <p>18-40</p>
-                    <p>Male-Female</p>
-                    <a href="/Naims/job.html" type="button">More Details</a>
-                </div>
+        <div class="px-5 mt-3">
+            <h4>How would you rate the design process from initial consultation to final implementation?</h4>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+                <p class="fs-4" id="rating-message"></p>
             </div>
         </div>
+        <div class="px-5 mt-3">
+            <h4>Were you satisfied with the design concepts presented before starting the project?</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    No
+                </label>
+            </div>
+        </div>
+        <div class="px-5 mt-3">
+            <h4>How was the communication throughout the project? Were your concerns and ideas heard and addressed?</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
+                <label class="form-check-label" for="flexRadioDefault5">
+                    Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                <label class="form-check-label" for="flexRadioDefault6">
+                    No
+                </label>
+            </div>
+        </div>
+        <div class="px-5 mt-3">
+            <h4>Did you feel informed and updated during the entire project?</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                <label class="form-check-label" for="flexRadioDefault3">
+                    Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                <label class="form-check-label" for="flexRadioDefault4">
+                    No
+                </label>
+            </div>
+        </div>
+        <div class="px-5 mt-3">
+            <h4>How do you rate the quality of materials and workmanship?</h4>
+            <div class="rating-stars">
+                <span class="rating-star" data-value="1">&#9733;</span>
+                <span class="rating-star" data-value="2">&#9733;</span>
+                <span class="rating-star" data-value="3">&#9733;</span>
+                <span class="rating-star" data-value="4">&#9733;</span>
+                <span class="rating-star" data-value="5">&#9733;</span>
+            </div>
+            <p id="feedback-message"></p>
+        </div>
+        <div class="px-5 mt-3">
+            <h4>Were there any aspects of the project where you felt the quality could have been improved?</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                <label class="form-check-label" for="flexRadioDefault3">
+                    Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                <label class="form-check-label" for="flexRadioDefault4">
+                    No
+                </label>
+            </div>
+        </div>
+
     </section>
-
-
-
     <!-- ------------------------------------footer for mobile-mode-------------------- -->
     <div class="position-fixed d-md-none d-block">
         <div class="navigation">
@@ -312,8 +317,86 @@
         <i class="bi bi-telephone-fill"></i>
     </a>
     </div>
-    <!-- ---------------------------------swiper-slide-------------------------------- -->
+    <!-- ---------------------------------5 star star rati--------------------------- -->
+    <script>
+        // script.js
+        const stars = document.querySelectorAll('.star');
+        const ratingMessage = document.getElementById('rating-message');
+        let selectedRating = 0;
 
+        // Event listeners for click and hover
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                selectedRating = star.getAttribute('data-value');
+                updateStars(selectedRating);
+                displayRatingMessage(selectedRating);
+            });
+
+            star.addEventListener('mouseover', () => {
+                updateStars(star.getAttribute('data-value'));
+            });
+
+            star.addEventListener('mouseout', () => {
+                updateStars(selectedRating);
+            });
+        });
+
+        // Function to update star visuals based on rating
+        function updateStars(rating) {
+            stars.forEach(star => {
+                if (star.getAttribute('data-value') <= rating) {
+                    star.classList.add('selected');
+                } else {
+                    star.classList.remove('selected');
+                }
+            });
+        }
+
+        // Function to display the rating message
+        function displayRatingMessage(rating) {
+            ratingMessage.textContent = `You rated us: ${rating} star${rating > 1 ? 's' : ''}`;
+        }
+    </script>
+    <!-- ---------------------------------5 star star rating-2--------------------------- -->
+    <script>
+        // script.js
+        const starElements = document.querySelectorAll('.rating-star');
+        const feedbackMessage = document.getElementById('feedback-message');
+        let currentRating = 0;
+
+        // Event listeners for click and hover
+        starElements.forEach(star => {
+            star.addEventListener('click', () => {
+                currentRating = star.getAttribute('data-value');
+                updateStarDisplay(currentRating);
+                showFeedbackMessage(currentRating);
+            });
+
+            star.addEventListener('mouseover', () => {
+                updateStarDisplay(star.getAttribute('data-value'));
+            });
+
+            star.addEventListener('mouseout', () => {
+                updateStarDisplay(currentRating);
+            });
+        });
+
+        // Function to update star visuals based on rating
+        function updateStarDisplay(rating) {
+            starElements.forEach(star => {
+                if (star.getAttribute('data-value') <= rating) {
+                    star.classList.add('selected');
+                } else {
+                    star.classList.remove('selected');
+                }
+            });
+        }
+
+        // Function to display the feedback message
+        function showFeedbackMessage(rating) {
+            feedbackMessage.textContent = `You rated us: ${rating} star${rating > 1 ? 's' : ''}`;
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
     <!-- -----------------------swiper -->
