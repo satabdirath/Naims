@@ -185,24 +185,26 @@ h6 {
   font-size: 1.1rem;
 }
 
-@media (max-width: 767px) {
+.web-logo img {
+  width: 100%;
+}
+
+.web-logo {
+  width: 100px;
+}
+
+@media (max-width: 700px) {
   .header {
     padding: 8px 0;
   }
 
-  .header .logo img {
-    max-height: 46px;
-    margin-left: 14px;
+  .web-logo img {
+    width: 100%;
   }
-
-  .header .logo h1 {
-    font-size: 20px;
+  
+  .web-logo {
+    width: 100px;
   }
-
-  .header .logo span {
-    font-size: 20px;
-  }
-
   .call {
     padding: 4px 12px;
     font-size: 0.8rem;
@@ -229,15 +231,13 @@ h6 {
   # Navigation Menu
   --------------------------------------------------------------*/
 /* Desktop Navigation */
-@media (min-width: 1200px) {
-
-
-
+@media (min-width: 700px) {
   .navmenu {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0;
-    width: 50%;
+    /* width: 50%; */
 
   }
 
@@ -256,7 +256,7 @@ h6 {
 
   .navmenu>ul>li {
     white-space: nowrap;
-    padding: 15px 14px;
+    padding: 15px 7px;
   }
 
   .navmenu>ul>li:last-child {
@@ -375,15 +375,15 @@ h6 {
 }
 
 .nav-icons {
-  width: 25%;
+  /* width: 25%; */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 93px;
+  /* margin-left: 93px; */
 }
 
 
-@media (max-width: 1199px) {
+@media (max-width: 700px) {
   .mobile-nav-toggle {
     display: none;
   }
@@ -634,13 +634,9 @@ h6 {
     width: 70%;
   }
 
-  .header {
-    justify-content: space-between !important;
-  }
+ 
 
-  .nav-icons {
-    width: 100%;
-  }
+
 
   .logo-container {
     margin-left: 5%;
@@ -1682,7 +1678,7 @@ section-title-sub-heading {
   position: fixed;
   bottom: 40%;
   right: 0;
-  background: white; 
+  background: white;
   color: rgb(126, 123, 123);
   font-size: 24px;
   width: 60px;
@@ -2083,6 +2079,7 @@ section-title-sub-heading {
   margin-bottom: 25px;
   padding-inline: 10px;
 }
+
 .blog-slider {
   overflow: hidden;
   max-width: 1200px;
@@ -3176,9 +3173,6 @@ time {
   padding-right: 5px;
 }
 
-.logo-container {
-  width: 25%;
-}
 
 .login a {
   color: #000;
@@ -4401,12 +4395,13 @@ time {
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
-                                                  /* ----Contact us form---- */
+/* ----Contact us form---- */
 /* --------------------------------------------------------------------------------------------------------- */
 
 .get-touch {
   padding-inline: 20px;
 }
+
 .contact-us {
   background: white;
   padding: 30px;
@@ -4486,11 +4481,13 @@ time {
   margin-top: 60px;
   padding: 50px;
 }
+
 .location-1 {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   padding-top: 24px;
 }
+
 /* -------------------------------------------address--------------------------------------------------- */
 .naims-address h3 {
   color: #850f0b;
@@ -4511,17 +4508,21 @@ time {
 }
 
 .star {
-  color: #ccc; /* Default color */
+  color: #ccc;
+  /* Default color */
 }
 
 .star:hover,
-.star:hover ~ .star {
-  color: #f39c12; /* Color on hover */
+.star:hover~.star {
+  color: #f39c12;
+  /* Color on hover */
 }
 
 .star.selected {
-  color: #f39c12; /* Color for selected stars */
+  color: #f39c12;
+  /* Color for selected stars */
 }
+
 /* ----------------------------------------------5 star function-2------------------------------------ */
 
 .rating-stars {
@@ -4530,14 +4531,53 @@ time {
 }
 
 .rating-star {
-  color: #ccc; /* Default color */
+  color: #ccc;
+  /* Default color */
 }
 
 .rating-star:hover,
-.rating-star:hover ~ .rating-star {
-  color: #f39c12; /* Color on hover */
+.rating-star:hover~.rating-star {
+  color: #f39c12;
+  /* Color on hover */
 }
 
 .rating-star.selected {
-  color: #f39c12; /* Color for selected stars */
+  color: #f39c12;
+  /* Color for selected stars */
+}
+
+/* ----------------------------------------home interior---------------------------------------- */
+.book-your-design::before {
+  content: "";
+  background: color-mix(in srgb, #d9534f, transparent 80%);
+  position: absolute;
+  inset: 0;
+}
+
+.book-your-design {
+  background-image: url(/Naims/assets/img/pattern-bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #b4292d;
+  /* background-size: cover; */
+  position: relative;
+}
+
+.book-consultation::before {
+  content: "";
+  background: color-mix(in srgb, #d9534f, transparent 80%);
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+}
+
+.book-consultation {
+  background-image: url(/Naims/assets/img/pattern-bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #b4292d;
+  /* background-size: cover; */
+  position: relative;
+  /* padding-inline: 109px; */
+  border-radius: 8px;
 }
