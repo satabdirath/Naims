@@ -4545,7 +4545,21 @@ time {
   color: #f39c12;
   /* Color for selected stars */
 }
+/* -----------------------------------------------------five star rating 3--------------------------- */
 
+
+.star-rating {
+  color: #ccc; /* Default color */
+}
+
+.star-rating:hover,
+.star-rating:hover ~ .star-rating {
+  color: #f39c12; /* Color on hover */
+}
+
+.star-rating.selected {
+  color: #f39c12; /* Color for selected stars */
+}
 /* ----------------------------------------home interior---------------------------------------- */
 .book-your-design::before {
   content: "";

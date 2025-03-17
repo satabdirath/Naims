@@ -325,3 +325,6 @@ const blog = new Swiper('.blog-slider', {
 // function displayRatingMessage(rating) {
 //     ratingMessage.textContent = `You rated us: ${rating} star${rating > 1 ? 's' : ''}`;
 // }
+
+// ----------------------five star raiting--------------------------
+
