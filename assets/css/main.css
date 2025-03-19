@@ -201,10 +201,11 @@ h6 {
   .web-logo img {
     width: 100%;
   }
-  
+
   .web-logo {
     width: 100px;
   }
+
   .call {
     padding: 4px 12px;
     font-size: 0.8rem;
@@ -634,7 +635,7 @@ h6 {
     width: 70%;
   }
 
- 
+
 
 
 
@@ -1988,7 +1989,7 @@ section-title-sub-heading {
   width: 350px;
   border: 1px solid gray;
   /* left: -56%; */
-  top: 88%;
+  top: 75%;
   /* z-index: 999; */
   background-color: #fff;
   border-radius: 8px;
@@ -2065,7 +2066,7 @@ section-title-sub-heading {
   margin-bottom: 25px;
   padding-inline: 10px;
   margin-top: 10px;
-  padding-bottom: 70px;
+  padding-bottom: 110px;
 }
 
 .recent-slider {
@@ -2088,13 +2089,17 @@ section-title-sub-heading {
 
 
 .services-card .services-card-item .service-icon {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  background-color: #141414;
+  background-color: #efe4e4;
   margin-bottom: 40px;
   border: 3px solid #fff;
   padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
 
 }
 
@@ -4141,6 +4146,11 @@ time {
   /* padding: 4px; */
   position: absolute;
   top: -22%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -4542,21 +4552,26 @@ time {
   color: #f39c12;
   /* Color for selected stars */
 }
+
 /* -----------------------------------------------------five star rating 3--------------------------- */
 
 
 .star-rating {
-  color: #ccc; /* Default color */
+  color: #ccc;
+  /* Default color */
 }
 
 .star-rating:hover,
-.star-rating:hover ~ .star-rating {
-  color: #f39c12; /* Color on hover */
+.star-rating:hover~.star-rating {
+  color: #f39c12;
+  /* Color on hover */
 }
 
 .star-rating.selected {
-  color: #f39c12; /* Color for selected stars */
+  color: #f39c12;
+  /* Color for selected stars */
 }
+
 /* ----------------------------------------home interior---------------------------------------- */
 .book-your-design::before {
   content: "";
@@ -4591,4 +4606,13 @@ time {
   position: relative;
   /* padding-inline: 109px; */
   border-radius: 8px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ================================================Boat=================================================== */
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 700px) {
+  .xit-widget-bswc-button {
+    margin-bottom: 100px;
+  }
 }
