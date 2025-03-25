@@ -26,7 +26,7 @@
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-   <link href="assets/css/main.css" rel="stylesheet">
+   <link href="/Naims/assets/css/main.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -141,7 +141,8 @@
             <div class="services-card swiper-wrapper pt-5">
                <div class="services-card-item swiper-slide">
                   <div class="service-icon">
-                     <img src="/Naims/assets/img/Full-Home-Interior-Design.png" style="height: 130px; max-width: 130px;">
+                     <img src="/Naims/assets/img/Full-Home-Interior-Design.png"
+                        style="height: 130px; max-width: 130px;">
                   </div>
                   <h2 class="service-heading">Full Home Interior Design</h2>
                   <p class="service-content">If you are looking for the best interior designer to build your dream home
@@ -150,7 +151,8 @@
                </div>
                <div class="services-card-item swiper-slide">
                   <div class="service-icon">
-                     <img src="/Naims/assets/img/Kitchen-and-Bathroom-Interior-Design.png" style="height: 130px; max-width: 130px;">
+                     <img src="/Naims/assets/img/Kitchen-and-Bathroom-Interior-Design.png"
+                        style="height: 130px; max-width: 130px;">
                   </div>
                   <h2 class="service-heading">Kitchen and Bathroom Interior Design</h2>
                   <p class="service-content">We provide complete kitchen and bathroom interior designing services to
@@ -166,7 +168,8 @@
                </div>
                <div class="services-card-item swiper-slide">
                   <div class="service-icon">
-                     <img src="/Naims/assets/img/Existing-Space-Planning-&-Optimization.png" style="height: 130px; max-width: 130px;">
+                     <img src="/Naims/assets/img/Existing-Space-Planning-&-Optimization.png"
+                        style="height: 130px; max-width: 130px;">
                   </div>
                   <h2 class="service-heading">Existing Space Planning & Optimization</h2>
                   <p class="service-content">At Naims Interior, we take over any size home space and convert it into a
@@ -174,7 +177,8 @@
                </div>
                <div class="services-card-item swiper-slide">
                   <div class="service-icon">
-                        <img src="/Naims/assets/img/Complete-Home-Customization.png" style="height: 130px; max-width: 130px;">
+                     <img src="/Naims/assets/img/Complete-Home-Customization.png"
+                        style="height: 130px; max-width: 130px;">
                   </div>
                   <h2 class="service-heading">Complete Home Customization</h2>
                   <p class="service-content">At Naims Interior, we offer all types of furniture customization, painting,
@@ -183,7 +187,8 @@
                </div>
                <div class="services-card-item swiper-slide">
                   <div class="service-icon">
-                     <img src="/Naims/assets/img/3D-Visualizatoin-and-Online-Interior-Consultation.png" style="height: 130px; max-width: 130px;">
+                     <img src="/Naims/assets/img/3D-Visualizatoin-and-Online-Interior-Consultation.png"
+                        style="height: 130px; max-width: 130px;">
                   </div>
                   <h2 class="service-heading">3D Visualization and Online Interior Consultation</h2>
                   <p class="service-content">If you wish to see your dream home before execution, you can preview it
@@ -426,7 +431,8 @@
                </div>
                <div class="choose-card-item swiper-slide">
                   <div class="choose-icon">
-                     <img src="/Naims/assets/img/Lifetime-Customer-Support.png" style="height: 130px; max-width: 130px;">
+                     <img src="/Naims/assets/img/Lifetime-Customer-Support.png"
+                        style="height: 130px; max-width: 130px;">
                   </div>
                   <h2 class="service-heading text-center mt-5">Lifetime Customer Support</h2>
                   <p class="service-content text-center">We are happily providing lifetime customer support for all our
@@ -434,7 +440,8 @@
                </div>
                <div class="choose-card-item swiper-slide">
                   <div class="choose-icon">
-                     <img src="/Naims/assets/img/Experienced-Interior-Designers.png" style="height: 130px; max-width: 130px;">
+                     <img src="/Naims/assets/img/Experienced-Interior-Designers.png"
+                        style="height: 130px; max-width: 130px;">
                   </div>
                   <h2 class="service-heading text-center mt-5">Experienced Interior Designers</h2>
                   <p class="service-content text-center">We are a team of highly experienced interior designing
@@ -912,6 +919,23 @@
          <div class="indicator"></div>
       </div>
    </div>
+   <!-- -------------------------------------live chat code-------------------------------------------- -->
+   <section>
+      <div class="chat-icon" id="chatIcon"><i class="fa-brands fa-rocketchat"></i></div>
+      <div class="chat-box" id="chatBox">
+         <div class="chat-header">
+            <span>Live Chat</span>
+            <button class="chat-btn" id="closeChat">✖</button>
+         </div>
+         <div class="chat-messages" id="chatMessages">
+            <!-- Chat messages will go here -->
+         </div>
+         <div class="mx-2 my-2">
+            <input class="chat-input" type="text" id="chatInput" placeholder="Type a message..." />
+            <button class="chat-btn" id="sendMessage">Send</button>
+         </div>
+      </div>
+   </section>
    <!-- --------------------------footer-for-desktop------------------------- -->
    <footer class="footer">
       <div class="footer-container">
@@ -1008,8 +1032,8 @@
    <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.6/swiper-bundle.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.1.0/dist/purecounter_vanilla.js"></script>
-   <script src="assets/js/main.js"></script>
-   <script type="text/javascript" src="https://botsailor.com/script/webchat-link.js?code=174222585465163"></script>
+   <script src="/Naims/assets/js/main.js"></script>
+   <!-- <script type="text/javascript" src="https://botsailor.com/script/webchat-link.js?code=174222585465163"></script> -->
 </body>
 
 </html>

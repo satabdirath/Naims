@@ -328,3 +328,41 @@ const blog = new Swiper('.blog-slider', {
 
 // ----------------------five star raiting--------------------------
 
+// ---------------------------live chat-----------------
+document.addEventListener('DOMContentLoaded', () => {
+  const chatIcon = document.getElementById('chatIcon');
+  const chatBox = document.getElementById('chatBox');
+  const closeChat = document.getElementById('closeChat');
+  const sendMessage = document.getElementById('sendMessage');
+  const chatInput = document.getElementById('chatInput');
+  const chatMessages = document.getElementById('chatMessages');
+
+  // Toggle chat box visibility
+  chatIcon.addEventListener('click', () => {
+      chatBox.style.display = chatBox.style.display === 'none' || chatBox.style.display === '' ? 'block' : 'none';
+  });
+
+  // Close chat box
+  closeChat.addEventListener('click', () => {
+      chatBox.style.display = 'none';
+  });
+
+  // Send message
+  sendMessage.addEventListener('click', () => {
+      const message = chatInput.value.trim();
+      if (message) {
+          const messageElement = document.createElement('p');
+          messageElement.textContent = message;
+          chatMessages.appendChild(messageElement);
+          chatInput.value = ''; // Clear input
+          chatMessages.scrollTop = chatMessages.scrollHeight; // Scroll to the bottom
+      }
+  });
+
+  // Optional: Send message on Enter key press
+  chatInput.addEventListener('keypress', (event) => {
+      if (event.key === 'Enter') {
+          sendMessage.click();
+      }
+  });
+});
