@@ -222,7 +222,7 @@ const testimonial = new Swiper('.testimonial-slider', {
 // --------------------------Recent Interior work-----------------------
 const recent = new Swiper('.recent-slider', {
 
-  
+
   grabCursor: true,
   spaceBetween: 30,
 
@@ -256,7 +256,7 @@ const recent = new Swiper('.recent-slider', {
 // -------------------------------------Blog section--------------------------------
 const blog = new Swiper('.blog-slider', {
 
-  
+
   grabCursor: true,
   spaceBetween: 30,
 
@@ -339,30 +339,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Toggle chat box visibility
   chatIcon.addEventListener('click', () => {
-      chatBox.style.display = chatBox.style.display === 'none' || chatBox.style.display === '' ? 'block' : 'none';
+    chatBox.style.display = chatBox.style.display === 'none' || chatBox.style.display === '' ? 'block' : 'none';
   });
 
   // Close chat box
   closeChat.addEventListener('click', () => {
-      chatBox.style.display = 'none';
+    chatBox.style.display = 'none';
   });
 
   // Send message
   sendMessage.addEventListener('click', () => {
-      const message = chatInput.value.trim();
-      if (message) {
-          const messageElement = document.createElement('p');
-          messageElement.textContent = message;
-          chatMessages.appendChild(messageElement);
-          chatInput.value = ''; // Clear input
-          chatMessages.scrollTop = chatMessages.scrollHeight; // Scroll to the bottom
-      }
+    const message = chatInput.value.trim();
+    if (message) {
+      const messageElement = document.createElement('p');
+      messageElement.textContent = message;
+      chatMessages.appendChild(messageElement);
+      chatInput.value = ''; // Clear input
+      chatMessages.scrollTop = chatMessages.scrollHeight; // Scroll to the bottom
+    }
   });
 
   // Optional: Send message on Enter key press
   chatInput.addEventListener('keypress', (event) => {
-      if (event.key === 'Enter') {
-          sendMessage.click();
-      }
+    if (event.key === 'Enter') {
+      sendMessage.click();
+    }
   });
 });
+
+// -------------------------js - for -carrer page----------------------------------------------------
+
+// const usercardtempate = document.querySelector("[data-user-template]")
+
+
+// fetch("https://jsonplaceholder.typicode.com/users").then(res => res.json()).then(data => { })
+
+// const card = usercardtempate.content.cloneNode(true);
+
+// console.log(card)
+
