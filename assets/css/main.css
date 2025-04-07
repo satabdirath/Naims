@@ -1721,7 +1721,7 @@ section-title-sub-heading {
 
   .icon.mobile-icon,
   #whatsapp-icon {
-    display: none !important;
+    /* display: none !important; */
   }
 }
 
